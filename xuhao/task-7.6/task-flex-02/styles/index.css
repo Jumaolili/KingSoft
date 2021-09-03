@@ -1,0 +1,228 @@
+.container {
+    /* position */
+    display: flex;
+    flex-direction: column;
+    /* box */
+    margin: 0 auto;
+    /* content */
+    width: 400px;
+    height: 1200px;
+    border: 1px solid #EAEBED;
+}
+
+.top {
+    /* position */
+    display: flex;
+    flex-direction: column;
+    /* box */
+    margin: 0 auto;
+    /* content */
+    height: 200px;
+    width: 350px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.bottom {
+    /* box */
+    margin: 0 auto;
+    /* position */
+    flex: 1;
+    /* content */
+    width: 380px;
+}
+
+
+/* top 详细内容 */
+
+.top-bar {
+    /* box */
+    margin: 0 auto;
+    /* position */
+    /* content */
+    width: 350px;
+}
+
+.top-title {
+    /* position */
+    position: relative;
+    /* content */
+    text-align: center;
+    line-height: 70px;
+    /* font */
+    font-size: large;
+    font-weight: bolder;
+}
+
+.back {
+    /* position */
+    position: absolute;
+    top: 24px;
+    left: 0;
+    /* content */
+    height: 20px;
+}
+
+.share {
+    /* position */
+    position: absolute;
+    top: 24px;
+    right: 0;
+    /* content */
+    height: 20px;
+}
+
+.search-frame {
+    /* position */
+    position: relative;
+    /* content */
+    background-color: #F6F7F8;
+    height: 40px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.search {
+    /* position */
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    /* content */
+    height: 18px;
+}
+
+.search-word {
+    /* position */
+    position: absolute;
+    top: 9px;
+    left: 42px;
+    /* content */
+    color: #8E959E;
+}
+
+.top-part {
+    /* box */
+    margin-top: 10px;
+    margin-bottom: -10px;
+    /* position */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.part-item {
+    /* content */
+    color: #8E959E;
+}
+
+.item-active {
+    /* content */
+    color: #1B87ED;
+    /* font */
+    font-weight: bolder;
+}
+
+
+/* bottom 书籍列表区域 */
+
+.bottom {
+    /* position */
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    /* Chrome Safari */
+}
+
+.bottom-item {
+    /* box */
+    margin-top: 20px;
+    /* position */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* content */
+    height: 100px;
+}
+
+.item-index {
+    /* content */
+    width: 20px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    /* font */
+    font-weight: bolder;
+}
+
+.item-detail {
+    /* position */
+    /* content */
+    height: 100px;
+}
+
+.item-book {
+    /*  */
+    /* content */
+    height: 100px;
+    width: 100px;
+}
+
+.detail-name {
+    /* box */
+    margin: 0;
+    /* position */
+    /* content */
+    /* font */
+    font-weight: bolder;
+}
+
+.detail-writer {
+    /* box */
+    margin: 0;
+    /* position */
+    /* content */
+    /* content */
+    color: #717781;
+    /* font */
+}
+
+.detail-index {
+    /* box */
+    margin: 0;
+    /* content */
+    color: #989EA9;
+    /* font */
+    font-weight: bold;
+}
+
+.detail-index-img {
+    /* position */
+    position: relative;
+    top: 4px;
+    /* content */
+    height: 20px;
+}
+
+.renqi {
+    /* box */
+    padding: 0 4px;
+    /* position */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* content */
+    background-color: #F3F3F6;
+    color: #A6ABB5;
+    border-radius: 8px;
+}
+
+.renqi-img {
+    /* content */
+    height: 11px;
+}
+
+.renqi-num {
+    /* font */
+    font-size: small;
+}

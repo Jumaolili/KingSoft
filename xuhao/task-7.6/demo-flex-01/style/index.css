@@ -1,0 +1,266 @@
+/* 通用 */
+
+.container,
+html,
+body {
+    /* box */
+    margin: 0;
+    padding: 0;
+    /* content */
+    height: 100%;
+}
+
+.container {
+    /* box */
+    /* position */
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* content */
+}
+
+
+/* top */
+
+.top {
+    /* position */
+    display: flex;
+    flex-direction: column;
+    /* box */
+    /* content */
+    width: 100%;
+    background-color: #D23E34;
+}
+
+.top-title {
+    /* box */
+    padding: 0 0;
+    /* position */
+    flex: 1;
+    /* content */
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    /* font */
+    font-size: large;
+}
+
+
+/* top 的 第一个nav */
+
+.top-nav-rank {
+    /* position */
+    flex: 1;
+    /* content */
+    width: 100%;
+    height: 50px;
+}
+
+.top-nav-rank ul {
+    /* box */
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* position */
+    display: flex;
+    flex-direction: row;
+    /* content */
+    height: 30px;
+    line-height: 30px;
+    width: 90%;
+    list-style: none;
+}
+
+.top-nav-rank ul li:first-of-type {
+    /* content */
+    border-radius: 10px 0 0 10px;
+}
+
+.top-nav-rank ul li:last-of-type {
+    /* position */
+    /* content */
+    border-radius: 0 10px 10px 0;
+}
+
+.rank-item {
+    /* box */
+    /* position */
+    flex: 1;
+    /* content */
+    color: white;
+    background-color: #CD2523;
+    text-align: center;
+    /* font */
+    font-size: small;
+}
+
+.rank-active {
+    /* content */
+    background-color: #B9211F;
+}
+
+
+/* top的第二个 nav */
+
+.top-nav-type {
+    /* position */
+    flex: 1;
+    /* content */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 10px 10px 0 0;
+    box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.top-nav-type {
+    /* content */
+    border-radius: 10px 10px 0 0;
+}
+
+.top-nav-type ul {
+    /* box */
+    padding: 0;
+    margin-left: 7%;
+    margin-right: 7%;
+    /* position */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    /* content */
+    list-style: none;
+}
+
+.type-item {
+    /* position */
+    /* content */
+    background-color: #F7F7F7;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.type-active {
+    /* content */
+    background-color: #D23E34;
+    color: white;
+}
+
+
+/* main 内容区域 */
+
+main {
+    /* box */
+    padding: 25px;
+    /* position */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    /* content */
+    height: 100%;
+    background-color: #EEEEEE;
+}
+
+.list-item {
+    /* box */
+    margin-bottom: 20px;
+    /* position */
+    display: flex;
+    flex-direction: column;
+    /* content */
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.item-top {
+    /* position */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.item-img {
+    /* position */
+    /* content */
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.item-rank {
+    /* position */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* content */
+    border-radius: 5px;
+    width: 50px;
+}
+
+.item-detail {
+    /* position */
+    flex: 1;
+    /*content */
+}
+
+.item-detail p {
+    /* content */
+    text-indent: 2rem;
+}
+
+.detail_1 {
+    /* font */
+    font-size: large;
+    font-weight: bolder;
+}
+
+.detail_2 span {
+    /* box */
+    padding: 4px;
+    /* content */
+    background-color: #F7F7F7;
+    color: #B19999;
+    border-radius: 3px;
+}
+
+.detail_3 {
+    /* content */
+    color: #D23E34;
+    /* font */
+    font-size: small;
+}
+
+.detail_4 {
+    /* position */
+    position: relative;
+    /* content */
+    color: #B19999;
+}
+
+.detail_5 {
+    /* box */
+    padding: 5px 10px;
+    margin: 10PX 20PX;
+    /* content */
+    background-color: #F7F7F7;
+    color: #B19999;
+    border-radius: 3px;
+}
+
+.detail_5 span:first-of-type {
+    /* font */
+    color: black;
+    font-weight: bolder;
+}
+
+.note {
+    /* position */
+    position: absolute;
+    top: 0;
+    right: 5px;
+}

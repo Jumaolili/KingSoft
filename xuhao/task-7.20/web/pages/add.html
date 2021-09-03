@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/add.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="top-icon">
+                <img class="icon" src="../imgs/1.png" alt="">
+                <span class="icon-title">时光胶囊</span>
+            </div>
+            <div class="top-btn">
+                <span><a href="index.html">首页</a></span>
+                <span><a href="add.html">添加</a></span>
+                <span><a href="find.html">打开</a></span>
+            </div>
+            <span class="top-back">
+                回胶囊日记
+            </span>
+        </div>
+        <div class="content">
+            <form class="content-form" action="">
+                <h1>添加胶囊</h1>
+                <p class="content-title">你的名字</p>
+                <p class="check check-name">名字必须填写.</p>
+                <div class="input">
+                    <input id="name" name="name" type="text">
+                </div>
+                <p class="content-title">你的邮箱</p>
+                <p class="check check-email"></p>
+                <div class="input">
+                    <input id="email" name="email" type="email">
+                </div>
+                <p class="content-title">打开时间(例如 2021-3-24 11:30:30)</p>
+                <p class="check check-time"></p>
+                <div class="input">
+                    <input id="open_time" name="open_time" type="text"><span class="tip">打开时间之前，胶囊内容是看不到的。</span>
+                </div>
+                <p class="content-title"><span></span>胶囊内容</p>
+                <p class="check check-content"></p>
+                <textarea id="content" class="area-content" name="content" id="" cols="30" rows="10"></textarea>
+                <p><span class="tip">胶囊内容不能超过5000字。</span></p>
+                <p class="content-title">未到期提示信息</p>
+                <textarea id="tip" class="area-tip" name="tip" id="" cols="30" rows="10"></textarea>
+                <p><span class="tip">在 打开时间 之前打开胶囊，会看到提示信息。</span></p>
+            </form>
+            <div class="submit">添加胶囊</div>
+        </div>
+    </div>
+</body>
+
+<script src="../dist/add.js"></script>
+
+</html>

@@ -1,0 +1,42 @@
+#open {
+    /* position */
+    display: inline-block;
+    /* content */
+    height: 30px;
+    width: 60px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ff0033;
+    border: 1px solid #ff0033;
+    /* font */
+    font-size: 11px;
+    color: white;
+}
+
+#open:hover {
+    cursor: pointer;
+}
+
+.item{
+    /* box */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* content */
+    
+}
+
+.item-title{
+    /* font */
+    font-size: 10px;
+    font-weight: normal;
+    color: grey;
+}
+
+.item-content{
+    /* box */
+    margin-top: 8px;
+    /* content */
+    border: 1px solid  #ff0033;
+    border-radius: 5px;
+    width: 78%;
+}

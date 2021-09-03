@@ -1,0 +1,119 @@
+body {
+    width: 99%;
+}
+
+.container {
+    /* box */
+    margin: 40px 40px;
+    /* content */
+}
+
+.top {
+    /* box */
+    padding-bottom: 20px;
+    /* content */
+    border-bottom: 1px solid grey;
+    /* font */
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+.detail-title {
+    /* content */
+    /* font */
+    font-size: x-large;
+}
+
+.detail-content {
+    /* content */
+    text-decoration: none;
+    border-bottom: 1px dotted grey;
+    color: grey;
+}
+
+.middle-motto {
+    /* box */
+    margin-right: 15px;
+    /* content */
+    color: grey;
+    /* font */
+    font-size: x-large;
+    font-style: italic;
+}
+
+.faked-img {
+    /* position */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* animation */
+    transform: rotate(-10deg);
+    /* content */
+    height: 250px;
+    width: 250px;
+    background-color: cadetblue;
+}
+
+.bottom-detail {
+    /* content */
+    width: 600px;
+}
+
+.bottom-item {
+    /* position */
+    overflow: auto;
+    /* content */
+    width: 650px;
+}
+
+.item-left {
+    /* position */
+    float: left;
+    /* content */
+    width: 299px;
+}
+
+.item-right {
+    /* position */
+    float: right;
+    /* content */
+    width: 299px;
+    border-left: 0.5px solid black;
+}
+
+.item-left p {
+    /* position */
+    float: right;
+    /* box */
+    margin-right: 50px;
+    margin-right: 0;
+    /* content */
+    /* font */
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.item-right p {
+    /* box */
+    margin-left: 80px;
+    /* font */
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.left-title {
+    /* content */
+    /* font */
+    font-style: italic;
+}
+
+ul {
+    /* box */
+    margin-left: 80px;
+}
+
+.right-title {
+    /* content */
+    /* font */
+    font-size: xx-small;
+}

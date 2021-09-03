@@ -1,0 +1,192 @@
+/* 整体布局 */
+
+body,
+html {
+    /* box */
+    margin: 0;
+    padding: 0;
+    /* content */
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    /* position */
+    display: flex;
+    flex-direction: column;
+    /* content */
+    height: 100%;
+}
+
+
+/* container 内部布局 */
+
+
+/* top */
+
+.top {
+    /* content */
+    height: 240px;
+    background-color: #E72828;
+}
+
+.top-title {
+    /* content */
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    vertical-align: bottom;
+    /* font */
+    font-size: xx-large;
+    color: white;
+}
+
+.top-type {
+    /* position */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* content */
+    height: 80px;
+    width: 100%;
+}
+
+.type-1 {
+    /* position */
+    position: absolute;
+    left: 5%;
+    /* content */
+    height: 60px;
+    width: 45%;
+    border-radius: 20px 0 0 20px;
+    background-color: #BA2124;
+}
+
+.type-2 {
+    /* position */
+    position: absolute;
+    right: 5%;
+    /* content */
+    height: 60px;
+    width: 45.5%;
+    background-color: #CE2326;
+    border-radius: 0 20px 20px 0;
+}
+
+.type-title {
+    /* position */
+    position: relative;
+    top: -17%;
+    right: -19%;
+    /* content */
+    color: white;
+    /* font */
+    font-size: large;
+}
+
+.type-img {
+    /* position */
+    position: relative;
+    top: 10%;
+    right: -16%;
+    /* content */
+    color: white;
+    /* font */
+    font-size: large;
+}
+
+.top-part {
+    /* position */
+    position: relative;
+    /* content */
+    height: 80px;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 9px 23px 3px rgba(0, 0, 0, 0.2);
+}
+
+.part-item {
+    /* box */
+    padding: 3px;
+    /* position */
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    display: inline-block;
+    /* content */
+    width: 12%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #E72828;
+    /* font */
+    font-size: large;
+    color: white;
+}
+
+
+/* bottom 部分 */
+
+.bottom {
+    /* box */
+    padding: 5%;
+    /* position */
+    flex: 1;
+    overflow: auto;
+    background-color: #EEEEEE;
+}
+
+.bottom-item {
+    /* position */
+    position: relative;
+    /* box */
+    padding: 5%;
+    margin-bottom: 5%;
+    /* content */
+    background-color: white;
+    border-radius: 15px;
+}
+
+.img-rank {
+    /* position */
+    position: absolute;
+    /* content */
+    border-radius: 15px 0 0 0;
+    width: 14%;
+}
+
+.img-banner {
+    /* content */
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+
+.item-detail {
+    /* position */
+    overflow: hidden;
+    /* content */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* font */
+    font-weight: bold;
+}
+
+.bar-img {
+    /* box */
+    margin: 0 -1px -1px 0;
+    /* content */
+    width: 16px;
+    background-color: grey;
+}
+
+.bar-text {
+    /* font */
+    font-size: 100%;
+}
+
+.item-bar {
+    /* position */
+    position: relative;
+    /* content */
+    text-align: right;
+}

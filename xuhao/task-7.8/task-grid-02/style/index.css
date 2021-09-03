@@ -1,0 +1,154 @@
+/* 整体布局 */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #090821;
+}
+
+
+/* 容器布局 */
+
+.container {
+    /* box */
+    margin: 0 auto;
+    margin-top: 35px;
+    /* position */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    /* content */
+    width: 1120px;
+    background-color: #090821;
+}
+
+.item {
+    /* content */
+    width: 350px;
+    height: 350px;
+    background-color: #DADADE;
+    border-radius: 5px;
+}
+
+.item-2 {
+    /* content */
+    width: 350px;
+    height: 350px;
+    background-color: #FDFFF8;
+    border-radius: 5px;
+}
+
+
+/* item 内部布局 */
+
+.item-top,
+.item-bottom {
+    /* box */
+    margin: 0 auto;
+    /* content */
+    width: 275px;
+}
+
+.item-top {
+    /* position */
+    position: relative;
+    /* content */
+    height: 150px;
+}
+
+.item-bottom {
+    /* position */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    /* content */
+    height: 200px;
+}
+
+.item-bottom-2 {
+    /* position */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* content */
+    height: 200px;
+}
+
+.top-content {
+    /* position */
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    /* content */
+    width: 260px;
+}
+
+.content-avater {
+    /* box */
+    margin: 0 auto;
+    /* content */
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.content-avater img {
+    /* content */
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.content-nickname {
+    /* box */
+    margin-top: 10px;
+    /* position */
+    overflow: hidden;
+    /* content */
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bottom-item {
+    /* box */
+    margin: 0 auto;
+    /* context */
+    width: 30px;
+    height: 30px;
+}
+
+.bottom-item img {
+    /* context */
+    width: 30px;
+    height: 30px;
+}
+
+.bottom-item-2 {
+    /* box */
+    margin: 0 auto;
+    /* context */
+    width: 44px;
+    height: 77px;
+}
+
+.bottom-item-2 img {
+    /* context */
+    width: 44px;
+    height: 77px;
+}
+
+.bottom-item-3 {
+    /* box */
+    margin: 0 auto;
+    /* context */
+    width: 75px;
+    height: 80px;
+}
+
+.bottom-item-3 img {
+    /* context */
+    width: 75px;
+    height: 80px;
+}

@@ -1,0 +1,406 @@
+/* 总体布局 */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    /* box */
+    /* content */
+    height: 80px;
+    background-color: #FFFFFF;
+}
+
+footer {
+    /* box */
+    flex: 1;
+    margin-bottom: -600px;
+    /* content */
+    height: 600px;
+    background-color: #333333;
+}
+
+
+/* header 详细布局 */
+
+.header-container {
+    /* box */
+    margin: 0 auto;
+    /* content */
+    width: 1200px;
+}
+
+.header-img {
+    /* position */
+    position: relative;
+    top: 17px;
+    /* content */
+    height: 46px;
+    width: 170px;
+}
+
+
+/* main 总体布局 */
+
+main {
+    /* box */
+    margin: 0 auto;
+    padding-bottom: 30px;
+    /* content */
+    width: 100%
+}
+
+.item-container {
+    /* box */
+    margin-bottom: 30px;
+    /* content */
+    width: 100%;
+    background: linear-gradient(#F5F5F5, white);
+}
+
+.main-item {
+    /* box */
+    margin: 0 auto;
+    /* content */
+    width: 1200px;
+}
+
+
+/* main 详细布局 */
+
+
+/* main 1 */
+
+.item-title {
+    /* content */
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    /* font */
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+}
+
+.item-title:hover {
+    /* content */
+    color: #33C088;
+}
+
+.item-type {
+    /* position */
+    position: relative;
+    /* content */
+    height: 40px;
+}
+
+.type-container {
+    /* box */
+    margin: 0 auto;
+    /* position */
+    display: flex;
+    flex-direction: row;
+    /* content */
+    height: 40px;
+    width: 600px;
+}
+
+.type {
+    /* position */
+    flex: 1;
+    /* content */
+    text-align: center;
+}
+
+.type a:hover {
+    /* content */
+    color: #33C088;
+}
+
+.type a {
+    /* content */
+    text-decoration: none;
+    color: #858C8D;
+}
+
+.active a {
+    color: #33C088;
+}
+
+.content-img {
+    /* position */
+    position: relative;
+    overflow: hidden;
+    /* content */
+    width: 228px;
+    height: 228px;
+}
+
+.content-img:hover .top-img {
+    /* animation */
+    transform: scale(1.2);
+}
+
+.content-img:hover .top-play {
+    /* content */
+    opacity: 1;
+    /* aniamtion */
+    transform: scale(1.2);
+}
+
+.content-img:hover .top-mask {
+    /* content */
+    opacity: 0.2;
+}
+
+.content-img .top-play {
+    /* position */
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    z-index: 22;
+    /* content */
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+    /* animation */
+    transition: 1s all ease;
+}
+
+.top-mask {
+    /* position */
+    z-index: 22;
+    position: absolute;
+    /* content */
+    width: 228px;
+    height: 228px;
+    opacity: 0;
+    background-color: black;
+    /* animation */
+    transition: 1s all ease;
+}
+
+.top-img {
+    /* animation */
+    transition: 1s all ease;
+}
+
+.content-img img {
+    /* content */
+    width: 228px;
+    height: 228px;
+}
+
+.content-item {
+    /* content */
+    width: 228px;
+}
+
+.text-title {
+    /* box */
+    margin-bottom: 0;
+    /* content */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* font */
+    font-weight: bold;
+}
+
+.text-title:hover {
+    color: #33C088;
+}
+
+.text-index {
+    /* box */
+    margin-bottom: 0;
+    margin-top: 0;
+    /* content */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #B5B4BB;
+}
+
+.text-index:hover {
+    color: #33C088;
+}
+
+.item-content {
+    /* position */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+
+/*  main 第二部分 */
+
+.type-btn {
+    /* box */
+    padding: 8px 30px;
+    /* position */
+    position: absolute;
+    top: -8px;
+    /* content */
+    border-radius: 3px;
+    border: 2px solid #C0C0C0;
+}
+
+.type-btn:hover {
+    color: #33C088;
+}
+
+.type-btn-img {
+    /* box */
+    margin: 0 3px -3px 0;
+    /* content */
+    width: 16px;
+    height: 16px;
+    background-color: grey;
+}
+
+.content-2-item {
+    /* box */
+    padding-bottom: 20px;
+    /* position */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* content */
+    width: 390px;
+    height: 90px;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.item-2-time {
+    /* box */
+    line-height: 94px;
+    text-align: right;
+}
+
+.content-2-img {
+    /* position */
+    overflow: hidden;
+    position: relative;
+    /* content */
+    width: 90px;
+    height: 90px;
+}
+
+.content-2-img:hover .middle-play {
+    /* animation */
+    transform: scale(1.1);
+    /* content */
+    opacity: 1;
+}
+
+.content-2-img:hover .middle-mask {
+    /* content */
+    opacity: 0.2;
+}
+
+.content-2-img:hover .middle-img {
+    /* animation */
+    transform: scale(1.1);
+}
+
+.middle-play {
+    /* position */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 22;
+    /* content */
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    /* aniamtion */
+    transition: 1s all ease;
+}
+
+.middle-img {
+    /* animation */
+    transition: 1s all ease;
+}
+
+.middle-mask {
+    /* position */
+    position: absolute;
+    z-index: 22;
+    /* content */
+    width: 90px;
+    height: 90px;
+    opacity: 0;
+    background-color: black;
+    /* animation */
+    transition: 1s all ease;
+}
+
+.content-2-text {
+    /* box */
+    padding: 5px;
+    /* content */
+    width: 185px;
+}
+
+.content-2-text:hover {
+    color: #33C088;
+}
+
+.item-content-2 {
+    /* box */
+    margin-top: 20px;
+    /* position */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* main 第三部分 */
+
+.content-3-item {
+    /* position */
+    position: relative;
+}
+
+.content-3-img {
+    /* content */
+    width: 228px;
+    height: 150px;
+}
+
+.content-3-img img {
+    /* content */
+    width: 228px;
+    height: 150px;
+}
+
+.content-3-text p {
+    /* position */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-3-title {
+    /* font */
+    font-weight: normal;
+}
+
+.text-3-index-img {
+    /* box */
+    margin: 0 3px -3px 0;
+    /* content */
+    width: 16px;
+    height: 16px;
+    background-color: grey;
+}
+
+.content-3-img .bottom-play {
+    /* position */
+    top: 40px;
+}
